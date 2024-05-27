@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: lighter;
+}
+
+h1{
+    color: #426696;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.7rem;
+    font-weight: 600; 
+    opacity: 0.8;
+}
+
+h3{
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+h2,span{
+    color: #426696;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+a{
+    color: #426696;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.glass{
+    background: white;
+    height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+
+.circle2{
+    bottom:5%;
+    left: 15%;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+}
+
+.link{
+    display: flex;
+    margin: 0.6rem 0rem;
+    padding: 0.6rem 5rem;
+    align-items: center;
+}
+
+.user img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.user:hover,.link:hover,.download:hover{
+    cursor: pointer;
+}
+
+.link a{
+    font-size: 100%;
+    padding: 0rem 0.8rem;
+    text-decoration: none;
+}
+
+.download{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    height: 130px;
+    width: 260px
+}
+
+.download img{
+    position: absolute;
+    top:-10%;
+    right: 10%;
+}
+
+.download h2{
+    font-size: 90%;
+    width: 40%;
+    padding-top: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+.status{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border: none;
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.characters{
+    flex: 2;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.char{
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.4), rgba(255,255,255,0.9));
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 10px rgba(122 122 122 0.2);
+    justify-content: space-between;
+}
+
+.progress1{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 220px;
+    height: 20%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 78%;
+}
+.progress2{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 220px;
+    height: 20%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 87%;
+}
+.progress3{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 220px;
+    height: 20%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress3::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 81%;
+}
+
+.char-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.char img{
+    border-radius: 40%;
+}
+
+.percentage{
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
